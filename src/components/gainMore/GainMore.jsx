@@ -1,3 +1,4 @@
+import SingleCard from '../singleCard/SingleCard';
 import { Container, Grid, Section } from '../styled/UI.styled';
 import SectionTitle from '../UI/sectionTitle/SectionTitle';
 
@@ -63,10 +64,12 @@ function GainMore(props) {
           subtitle={sectionData.sectionTitle.subtitle}
           title={sectionData.sectionTitle.title}
         />
-        <Grid cols="2">
-          <h3>one</h3>
-          <h3>one</h3>
-          <h3>one</h3>
+        <Grid cols="3">
+          <SingleCard
+            icon={sectionData.gainCards[0].icon}
+            title={sectionData.gainCards[0].title}
+            descr={sectionData.gainCards[0].descr}
+          ></SingleCard>
         </Grid>
       </Container>
     </Section>

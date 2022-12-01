@@ -21,3 +21,27 @@ export const Grid = styled.ul`
   padding-left: 0;
 `;
 // susikurti SingleCard componenta, naudojant styled componentus
+// Icon
+// nustatem papildomus atributus priklausancius nuo props
+export const Icon = styled.i.attrs((props) => ({
+  className: `fa fa-${props.icon}`,
+  ariaHidden: true,
+}))`
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px !important;
+  width: 64px;
+  height: 64px;
+  color: #fff;
+  background-color: var(--primary-500);
+  border-radius: 6px;
+`;
+
+// button type submit
+// default attributes
+const SubmitBtn = styled.button.attrs({
+  type: 'submit',
+})`
+  font-size: 2rem;
+`;

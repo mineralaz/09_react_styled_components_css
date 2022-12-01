@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Icon } from '../styled/UI.styled';
 
 const SingleCardLiEl = styled.li`
   display: grid;
@@ -20,7 +21,7 @@ const SingleCardDescr = styled.p`
 function SingleCard(props) {
   return (
     <SingleCardLiEl>
-      <Icon>{props.icon}</Icon>
+      <Icon icon={props.icon}></Icon>
       <SingleCardTitle>{props.title}</SingleCardTitle>
       <SingleCardDescr>{props.descr}</SingleCardDescr>
     </SingleCardLiEl>
