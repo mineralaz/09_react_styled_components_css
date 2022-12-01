@@ -1,9 +1,10 @@
 import './App.css';
+import GainMore from './components/gainMore/GainMore';
 
 function App() {
   return (
-    <div className="App container">
-      <h1>React</h1>
+    <div className="App">
+      <GainMore />
     </div>
   );
 }
