@@ -11,5 +11,13 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 0 20px;
 `;
-// susikurti SectionTitle styled componenta
-// export const SectionTitle =
+// susikurti Grid  componenta
+export const Grid = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(${(props) => props.cols || '3'}, 1fr);
+  gap: 1rem;
+  margin-top: 0;
+  list-style: none;
+  padding-left: 0;
+`;
+// susikurti SingleCard componenta, naudojant styled componentus
