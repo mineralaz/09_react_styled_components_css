@@ -16,6 +16,7 @@ const Pill = styled.p`
 `;
 
 const MainSectionTitle = styled.h2`
+  color: ${(props) => (props.color ? props.color : 'inherit')};
   font-size: 36px;
   margin-bottom: 16px;
   line-height: 46px;
@@ -32,8 +33,8 @@ const SectionSubtitle = styled.h3`
 function SectionTitle(props) {
   return (
     <Wrap>
-      <Pill>{props.pill}</Pill>
-      <MainSectionTitle>{props.title}</MainSectionTitle>
+      {props.pill && <Pill>{props.pill}</Pill>}
+      <MainSectionTitle color={props.color}>{props.title}</MainSectionTitle>
       <SectionSubtitle>{props.subtitle}</SectionSubtitle>
     </Wrap>
   );
