@@ -34,7 +34,7 @@ function Cta(props) {
     <Section>
       <Container>
         <Wrapper>
-          <Flex>
+          <Flex responsive>
             <div>
               <CtaTitle>
                 The fastest way from idea to live site. Period.
@@ -44,8 +44,8 @@ function Cta(props) {
               </CtaSubtitle>
             </div>
             <Flex gap>
-              <Button>Get Started</Button>
-              <SecondaryButton>Learn More</SecondaryButton>
+              <Button>Get&nbsp;Started</Button>
+              <SecondaryButton>Learn&nbsp;More</SecondaryButton>
             </Flex>
           </Flex>
         </Wrapper>
