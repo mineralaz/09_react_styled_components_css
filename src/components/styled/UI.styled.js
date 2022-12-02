@@ -51,6 +51,7 @@ const SubmitBtn = styled.button.attrs({
 `;
 // button
 export const Button = styled.button`
+  border: none;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
@@ -64,6 +65,17 @@ export const Button = styled.button`
 // secondary button
 export const SecondaryButton = styled(Button)`
   background-color: #fff;
+  color: #333f51;
+`;
+// nav button
+export const PrimaryNavButton = styled(Button)`
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 16px;
+`;
+// SecondaryNavButton
+export const SecondaryNavButton = styled(PrimaryNavButton)`
+  background-color: inherit;
   color: #333f51;
 `;
 // sukurti Flex styled component
