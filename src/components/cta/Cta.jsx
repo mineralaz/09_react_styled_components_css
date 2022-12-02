@@ -43,7 +43,7 @@ function Cta(props) {
                 Flex is a Small SaaS Business. Flex isn't a traditional company.
               </CtaSubtitle>
             </div>
-            <Flex gap>
+            <Flex gap="24px">
               <Button>Get&nbsp;Started</Button>
               <SecondaryButton>Learn&nbsp;More</SecondaryButton>
             </Flex>
