@@ -45,8 +45,8 @@ function SecondGainMore(props) {
           subtitle={sectionData.sectionTitle.subtitle}
           title={sectionData.sectionTitle.title}
         />
-        <Flex gap="50px">
-          <GainCardsList cols="1" items={sectionData.gainCards} iconLeft />
+        <Flex gap="90px">
+          <GainCardsList cols="1" items={sectionData.gainCards} iconLeft left />
           <img src={SectionImg} alt="" />
         </Flex>
       </Container>

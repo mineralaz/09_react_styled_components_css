@@ -5,8 +5,9 @@ const SingleCardLiEl = styled.li`
   display: grid;
   grid-template-columns: ${(props) => (props.iconLeft ? '0.1fr 1fr' : '1fr')};
   ${(props) => props.iconLeft && 'column-gap: 24px;'}
-  justify-items: center;
-  text-align: center;
+  ${(props) => (props.left ? '' : 'justify-items: center')};
+
+  text-align: ${(props) => (props.left ? 'left' : 'center')};
   margin-bottom: 32px;
 `;
 
@@ -21,7 +22,7 @@ const SingleCardDescr = styled.p`
 
 function SingleCard(props) {
   return (
-    <SingleCardLiEl iconLeft={props.iconLeft}>
+    <SingleCardLiEl iconLeft={props.iconLeft} left={props.left}>
       <Icon iconLeft={props.iconLeft} icon={props.icon}></Icon>
       <SingleCardTitle>{props.title}</SingleCardTitle>
       <SingleCardDescr>{props.descr}</SingleCardDescr>

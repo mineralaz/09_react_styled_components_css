@@ -7,6 +7,7 @@ function GainCardsList(props) {
       {props.items.map((cObj) => (
         // generuoti SingleCard komponetus
         <SingleCard
+          left={props.left}
           iconLeft={props.iconLeft}
           key={cObj.id}
           icon={cObj.icon}
