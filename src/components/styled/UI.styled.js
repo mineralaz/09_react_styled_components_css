@@ -81,9 +81,11 @@ export const SecondaryNavButton = styled(PrimaryNavButton)`
 // sukurti Flex styled component
 export const Flex = styled.div`
   display: flex;
+
   align-items: center;
   justify-content: space-between;
   column-gap: ${(props) => (props.gap ? props.gap : '0')};
+  ${(props) => props.rowReverse && 'flex-direction: row-reverse'};
   @media screen and (max-width: 1000px) {
     flex-direction: ${(props) => (props.responsive ? 'column' : 'row')};
     row-gap: ${(props) => (props.responsive ? '1.5rem' : '0')};
