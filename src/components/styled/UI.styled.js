@@ -78,7 +78,3 @@ export const Flex = styled.div`
   }
 `;
 // kuris isdelioja elementus kaip pavyzdyje
-
-export const SectionImg = styled.img`
-  src: '../../assets/img/sectionImg.png';
-`;
