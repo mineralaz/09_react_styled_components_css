@@ -8,7 +8,7 @@ export const Section = styled.section`
 // susikurti Container styled componenta
 export const Container = styled.div`
   background-color: ${(props) => props.bgc && props.bgc};
-  max-width: 1440px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px;
 `;
@@ -78,3 +78,7 @@ export const Flex = styled.div`
   }
 `;
 // kuris isdelioja elementus kaip pavyzdyje
+
+export const SectionImg = styled.img`
+  src: '../../assets/img/sectionImg.png';
+`;

@@ -1,6 +1,7 @@
 import GainCardsList from '../GainCardsList';
 import { Container, Flex, Section } from '../styled/UI.styled';
 import SectionTitle from '../UI/sectionTitle/SectionTitle';
+import SectionImg from '../../assets/img/sectionImg.png';
 
 const sectionData = {
   sectionTitle: {
@@ -44,9 +45,9 @@ function SecondGainMore(props) {
           subtitle={sectionData.sectionTitle.subtitle}
           title={sectionData.sectionTitle.title}
         />
-        <Flex>
+        <Flex gap>
           <GainCardsList cols="1" items={sectionData.gainCards} iconLeft />
-          <div>bla bla bla</div>
+          <img src={SectionImg} alt="" />
         </Flex>
       </Container>
     </Section>
