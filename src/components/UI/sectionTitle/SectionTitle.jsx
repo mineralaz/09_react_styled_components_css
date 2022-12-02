@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 const Wrap = styled.div`
   text-align: ${(props) => (props.left ? 'left' : 'center')};
-  margin-bottom: 48px;
+  margin: ${(props) => (props.left ? '0 0 48px 0' : '0 auto 48px')};
+  max-width: 920px;
 `;
 
 const Pill = styled.p`

@@ -81,7 +81,6 @@ export const SecondaryNavButton = styled(PrimaryNavButton)`
 // sukurti Flex styled component
 export const Flex = styled.div`
   display: flex;
-
   align-items: center;
   justify-content: space-between;
   column-gap: ${(props) => (props.gap ? props.gap : '0')};
