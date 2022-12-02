@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Wrap = styled.div`
-  text-align: center;
+  text-align: ${(props) => (props.left ? 'left' : 'center')};
   margin-bottom: 48px;
 `;
 
@@ -32,7 +32,7 @@ const SectionSubtitle = styled.h3`
 
 function SectionTitle(props) {
   return (
-    <Wrap>
+    <Wrap left={props.left}>
       {props.pill && <Pill>{props.pill}</Pill>}
       <MainSectionTitle color={props.color}>{props.title}</MainSectionTitle>
       <SectionSubtitle>{props.subtitle}</SectionSubtitle>
