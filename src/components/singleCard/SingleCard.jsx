@@ -4,6 +4,7 @@ import { Icon } from '../styled/UI.styled';
 const SingleCardLiEl = styled.li`
   display: grid;
   grid-template-columns: ${(props) => (props.iconLeft ? '0.1fr 1fr' : '1fr')};
+  ${(props) => props.iconLeft && 'column-gap: 24px;'}
   justify-items: center;
   text-align: center;
   margin-bottom: 32px;
