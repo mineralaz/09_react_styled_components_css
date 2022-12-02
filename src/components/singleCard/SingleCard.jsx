@@ -3,7 +3,7 @@ import { Icon } from '../styled/UI.styled';
 
 const SingleCardLiEl = styled.li`
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: ${(props) => (props.iconLeft ? '0.1fr 1fr' : '1fr')};
   justify-items: center;
   text-align: center;
   margin-bottom: 32px;
@@ -20,8 +20,8 @@ const SingleCardDescr = styled.p`
 
 function SingleCard(props) {
   return (
-    <SingleCardLiEl>
-      <Icon icon={props.icon}></Icon>
+    <SingleCardLiEl iconLeft={props.iconLeft}>
+      <Icon iconLeft={props.iconLeft} icon={props.icon}></Icon>
       <SingleCardTitle>{props.title}</SingleCardTitle>
       <SingleCardDescr>{props.descr}</SingleCardDescr>
     </SingleCardLiEl>

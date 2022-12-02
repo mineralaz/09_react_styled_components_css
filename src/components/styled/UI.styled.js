@@ -28,10 +28,12 @@ export const Icon = styled.i.attrs((props) => ({
   className: `fa fa-${props.icon}`,
   ariaHidden: true,
 }))`
-  display: flex !important;
+  display: flex;
+
   align-items: center;
   justify-content: center;
-  font-size: 24px !important;
+  ${(props) => (props.iconLeft ? 'grid-row: 1 / span 2' : '')};
+  font-size: 24px;
   width: 64px;
   height: 64px;
   color: #fff;

@@ -1,5 +1,4 @@
 import GainCardsList from '../GainCardsList';
-import SingleCard from '../singleCard/SingleCard';
 import { Container, Grid, Section } from '../styled/UI.styled';
 import SectionTitle from '../UI/sectionTitle/SectionTitle';
 
